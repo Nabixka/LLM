@@ -69,7 +69,8 @@ const getAllConversations = async (userId) => {
          status: "success",
          data: result.rows,
       });
-   } catch (error) {
+   } 
+   catch (error) {
       console.error("Error in getAllConversations:", error);
       return resBody(500, {
          status: "error",
@@ -205,7 +206,8 @@ const deleteAllConversations = async (userId) => {
          status: "success",
          message: `${result.rowCount} conversations deleted successfully for user ${userId}`,
       });
-   } catch (error) {
+   } 
+   catch (error) {
       console.error("Error in deleteAllConversations:", error);
       return resBody(500, {
          status: "error",

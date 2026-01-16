@@ -3,7 +3,7 @@
 import { useSession } from "next-auth/react";
 import ApiStatus from "@/components/check/api-status";
 import UserInfo from "@/components/check/user-info";
-// import LLMStatus from "@/components/check/llm-status";
+import LLMStatus from "@/components/check/llm-status";
 
 interface Endpoint {
    name: string;
@@ -106,7 +106,7 @@ const Dashboard = () => {
          />
 
          <ApiStatus endpoints={endpoints} />
-         {/* <LLMStatus /> */}
+         {<LLMStatus />}
       </div>
    );
 };
