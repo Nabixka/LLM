@@ -21,7 +21,6 @@
           - docker.io
           - gpg
           - curl
-          - unzip
         state: present
       tags: [packages]
 
